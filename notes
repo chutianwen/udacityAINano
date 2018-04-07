@@ -1,0 +1,11 @@
+class fun:
+    def __init__(self,x):
+        self._x = x
+
+    @property
+    def x():
+        return self._x
+
+t1 = fun(4)
+# use t1.x rather than t1.x()
+t1.x
