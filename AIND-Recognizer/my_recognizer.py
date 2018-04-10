@@ -1,6 +1,6 @@
 import warnings
+
 from asl_data import SinglesData
-import operator
 
 
 def recognize(models: dict, test_set: SinglesData):
@@ -25,7 +25,7 @@ def recognize(models: dict, test_set: SinglesData):
 	# return probabilities, guesses
 	all_words_x_lengths = test_set.get_all_Xlengths()
 
-	for id in range(len(test_set.get_all_sequences())):
+	for id in range(len(test_set.wordlist)):
 		x, lengths = all_words_x_lengths[id]
 		word_probs = {}
 		best_score = float("-inf")

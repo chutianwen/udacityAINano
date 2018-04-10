@@ -9,16 +9,6 @@ FEATURES = ['right-y', 'right-x']
 
 class TestRecognize(TestCase):
 
-    def test(self):
-        pass
-        test_set = self.asl.build_test(FEATURES)
-        # print(test_set.wordlist)
-        # print(test_set._data)
-        # print(test_set._hmm_data)
-        #
-        # print(test_set.num_items)
-        # print(test_set.get_all_Xlengths())
-
     def setUp(self):
         self.asl = AslDb()
         self.training_set = self.asl.build_training(FEATURES)

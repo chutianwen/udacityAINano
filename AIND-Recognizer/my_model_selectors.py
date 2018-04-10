@@ -54,7 +54,6 @@ class SelectorCV(ModelSelector):
 
 	def scoreModel(self, num_states, split_method):
 
-		# print("Now running num_states:{}".format(num_states))
 		log_l = cnt = 0
 		if split_method is None:
 			try:
